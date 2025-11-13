@@ -41,18 +41,20 @@ def vigenere_cipher(text, password, cipher):
 	return crypted_text
 
 
-if __name__ == "__main__":
-	message = "le chocolat est bon"
 
-	crypted_text = cesar_cipher(message, 12, cipher=True) # exo 1
-	print(crypted_text)
 
-	initial_message = cesar_cipher(crypted_text, 12, cipher=False) # exo 2
-	print(initial_message == message)
+# if __name__ == "__main__":
+# 	message = "le chocolat est bon"
 
-	hack_cesar_cipher(crypted_text, alphabet=string.printable) # exo3
+# 	crypted_text = cesar_cipher(message, 12, cipher=True) # exo 1
+# 	print(crypted_text)
 
-	crypted_message = vigenere_cipher(text=message, password="Azerty12345!", cipher=True)
-	print(crypted_message)
-	initial_message = vigenere_cipher(text=crypted_message, password="Azerty12345!", cipher=False)
-	print(initial_message)
+# 	initial_message = cesar_cipher(crypted_text, 12, cipher=False) # exo 2
+# 	print(initial_message == message)
+
+# 	hack_cesar_cipher(crypted_text, alphabet=string.printable) # exo3
+
+# 	crypted_message = vigenere_cipher(text=message, password="Azerty12345!", cipher=True)
+# 	print(crypted_message)
+# 	initial_message = vigenere_cipher(text=crypted_message, password="Azerty12345!", cipher=False)
+# 	print(initial_message)
